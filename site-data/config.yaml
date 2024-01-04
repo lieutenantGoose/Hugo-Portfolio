@@ -143,9 +143,9 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer interested mainly in developing simulation softwares and games. My background is in programming, physics and mathematics. 
+      I'm a dedicated software developer with a passion for developing simulation software and games. Currently pursuing a bachelor's degree in computer science, my background spans computer science, physics, and mathematics.
 
-      I'm currently reading for a bachelors degree in Computer Science.
+      I excel at problem solving and always like to take on new challenges.
     skills:
       enable: true
       title: "Here are a few languages and tools I'm familiar with:"
