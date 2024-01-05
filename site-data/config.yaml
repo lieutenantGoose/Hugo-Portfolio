@@ -14,8 +14,6 @@ outputs:
 
 Paginate: 3
 enableRobotsTXT: true
-# disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
 
 markup:
   goldmark:
@@ -29,76 +27,31 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    # - identifier: dropdown1
-    #   title: example dropdown 1
-    #   name: example 1
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 1
-    # - identifier: dropdown2
-    #   title: example dropdown 2
-    #   name: example 2
-    #   url: /#
-    #   parent: dropdown
-    #   weight: 2
 
 params:
   title: "Tharuka Jayawardane"
   description: My portfolio
-  # staticPath: ""  # The path to serve the static files from
   favicon: "/spinner.png"
 
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    defaultTheme: "dark" # dark
+    defaultTheme: "dark"
 
   font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
+    fontSize: 1rem  
+    fontWeight: 400 
+    lineHeight: 1.5 
+    textAlign: left 
 
-  # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
-
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
-
-  # If you want to customize the menu, you can change it here
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Tharuka Jayawardane" # Brand name for the brand | default is the title variable
-    disableSearch: false
-    # searchPlaceholder: "Search"
+    brandLogo: "/spinner.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: true
+    brandName: "Tharuka Jayawardane"
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -117,10 +70,10 @@ params:
     title: "Tharuka"
     subtitle: "I am a developer"
     content: "I like to work on personal projects and learn new things along the way"
-    image: /images/hero.svg
+    image: /images/hero.jpg
     bottomImage:
       enable: true
-    roundImage: true # Make hero image circular | default false
+    roundImage: true
     button:
       enable: false
       name: "Resume"
@@ -133,7 +86,7 @@ params:
           url: https://github.com/privateDuck
       customIcons:
         - icon: /stovf.png
-          url: "https://stack.com"
+          url: "https://stackoverflow.com/users/16094602/privateduck"
         - icon: /linkedin.png
           url: "https://www.linkedin.com/in/tharuka-jayawardane-in/"
 
@@ -141,7 +94,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/oogway.png"
     content: |-
       I'm a dedicated software developer with a passion for developing simulation software and games. Currently pursuing a bachelor's degree in computer science, my background spans computer science, physics, and mathematics.
 
@@ -160,21 +113,10 @@ params:
   # Experience
   experience:
     enable: false
-    # title: "Custom Name"
-    items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
   # Education
   education:
     enable: true
-    # title: "Custom Name"
     index: false
     items:
       - title: "Bachelor of Science (Honours) in Computer Science"
@@ -188,37 +130,29 @@ params:
             - Member of the AIESEC Club of Kelaniya University
         featuredLink:
           enable: false
-          url: /images/hero.svg
-      - title: "High School"
+          url: /images/hero.jpg
+      - title: "School"
         school:
           name: "Ananda College"
           url: "https://www.anandacollege.edu.lk/"
         date: "2007 - 2020"
         featuredLink:
           enable: false
-          url: "https://example.com"
 
   # Achievements
   achievements:
     enable: false
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
 
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
     items:
       - title: PhysiX 2D
-        content: An advanced yet easity to use physics simulator intended for physics undergrads.
-        image: /images/projects/profile.png
+        content: An advanced yet easy to use physics simulator intended for physics undergrads.
+        image: /images/projects/physx.jpg
         featured:
-          name: Currently in development
-          link: https://github.com/privateDuck
+          name: Still in prototype phase
+          link: https://tharuka-jay.netlify.app
         badges:
           - "C++"
           - "Direct 3D"
@@ -228,7 +162,7 @@ params:
 
       - title: LogicFlow
         content: A GUI application for evaluating boolean and logical expression and simulating digital circuits
-        image: /images/projects/converter.jpg
+        image: /images/projects/noimg.jpg
         featured:
           name: Currently in development
           link: https://github.com/privateDuck
@@ -239,7 +173,32 @@ params:
           - icon: fab fa-github
             url: https://github.com/privateDuck
 
-      - title: DataGen
+      - title: G2D FFT
+        content: A Unity Based GPU-Accelerated Radix-2 2D-FFT Library
+        image: /images/projects/fft.jpg
+        featured:
+          name: Project
+          link: https://github.com/privateDuck/G2D-FFT
+        badges:
+          - "C#"
+          - "Unity"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/privateDuck/G2D-FFT
+
+      - title: ColorLite
+        content: A simple .NET library for working with common color spaces
+        image: /images/projects/noimg.jpg
+        featured:
+          name: Project
+          link: https://github.com/privateDuck/ColorLite
+        badges:
+          - "C#"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/privateDuck/ColorLite
+
+      - title: Sygon
         content: A powerful dataset generator and a statistical analyzer
         image: /images/projects/stats.png
         featured:
@@ -255,15 +214,14 @@ params:
   #Contact
   contact:
     enable: true
-    # title: "Custom Name"
     content: I'm always available, send me an email anytime
     email: stsp.official@gmail.com
-    btnName: Mail me
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
+    btnName: Send Email
+    formspree:
+      enable: true
+      formId: xzbnbkkw # https://formspree.io/f/xzbnbkkw'
+      emailCaption: "Your email address"
+      messageCaption: "Type your messege"
 
   footer:
     recentPosts:
@@ -276,11 +234,9 @@ params:
       github: https://github.com/privateDuck
       linkedin: https://www.linkedin.com/in/tharuka-jayawardane-in/
 
-  # List pages like blogs and posts
   listPages:
     disableFeaturedImage: true
 
-  # Single pages like blog and post
   singlePages:
     readTime:
       enable: true
@@ -288,7 +244,6 @@ params:
     scrollprogress:
       enable: true
 
-  # For translations
   terms:
     read: "Read"
     toc: "Table Of Contents"
@@ -298,8 +253,7 @@ params:
 
   datesFormat:
     article: "2006, Jan 2"
-    articleList: "Jan 2, 2006"
-    articleRecent: "Jan 2, 2006"
+    articleList: "2006, Jan 2"
+    articleRecent: "2006, Jan 2"
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  customScripts:
